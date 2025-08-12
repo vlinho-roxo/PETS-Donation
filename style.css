@@ -53,12 +53,6 @@ h1{
     margin-top: 30px;
 }
 
-.card > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
-
 .card > button {
     color: white;
     background-color: blue;
@@ -80,7 +74,7 @@ h1{
     object-fit: cover;
     height: 140px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
@@ -110,7 +104,7 @@ h1{
 }
 
 #form {
-    max-width: 300px;
+    max-width: 500px;
     margin: 40px auto;
     padding: auto;
     background: #f6f6f6;
@@ -136,7 +130,8 @@ h1{
     background: #fff;
     margin-bottom: 10px;
     transition: border-color 0.2s;
-    max-width: max-content;
+    width: 350px;
+    max-width: 350px;
 }
 
 #form input:focus,
@@ -160,4 +155,8 @@ h1{
 
 #form button[type="submit"]:hover {
     background: #0077cc;
+}
+
+#form button[type="submit"]:active {
+    background: #0064ac;
 }
