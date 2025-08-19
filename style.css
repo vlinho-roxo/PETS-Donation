@@ -1,6 +1,6 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image:url(bg.jpg);
+    background-image:url(bg.png);
 }
 
 #container {
@@ -131,6 +131,12 @@ h1{
     font-weight: bold;
     color: #333;
     margin-top: 8px;
+}
+
+#formB h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 #formB input,

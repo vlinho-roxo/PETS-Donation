@@ -25,9 +25,10 @@
         </div>
         <div id="form"></div>
         <script>
-            function adotar(nome1, nome2, nome3) {
+            function adotar(nome1, nome2, nome3, nome4, nome5) {
                 document.getElementById("form").innerHTML = `
             <div id="formB" class="form-container">
+                    <h2>Formulário de Adoção</h2>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
 
@@ -42,6 +43,8 @@
                         <option label="${nome1}" value="${nome1.toLowerCase()}">${nome1}</option>
                         <option label="${nome2}" value="${nome2.toLowerCase()}">${nome2}</option>
                         <option label="${nome3}" value="${nome3.toLowerCase()}">${nome3}</option>
+                        <option label="${nome4}" value="${nome4.toLowerCase()}">${nome4}</option>
+                        <option label="${nome5}" value="${nome5.toLowerCase()}">${nome5}</option>
                     </select>
 
                     <label for="motivo">Motivo da adoção:</label>
