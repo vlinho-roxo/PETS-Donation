@@ -14,10 +14,10 @@
     <div id="container">
         <header>
             <ul>
-                <li><a href="main.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="doacao.html">Doação</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Doação</a></li>
+                <li><a href="#">Sobre</a></li>
             </ul>
         </header>
         <h1>Doação de Animais Domésticos</h1>
@@ -25,22 +25,22 @@
             <div class="card">
                 <img src="cat.png" alt="Gato para adoção">
                 <h3>Gato - Tom</h3>
-                <p>Idade: 11 meses</p>
-                <p>Raça: Laranja</p>
+                <p>Pequeno / Laranja / 11 meses / Macho</p>
+                <p>Dócil e curioso, porém pode ser um pouco medroso.</p>
                 <button onclick="adotar()">Quero Adotar</button>
             </div>
             <div class="card">
                 <img src="dog.png" alt="Cachorro para adoção">
                 <h3>Cão - Rex</h3>
-                <p>Idade: 5 anos</p>
-                <p>Raça: Vira-lata</p>
+                <p>Médio / Vira-lata / 5 anos / Macho</p>
+                <p>Brincalhão e amigável, ele pode ser um ótimo parceiro para aventuras.</p>
                 <button onclick="adotar()">Quero Adotar</button>
             </div>
             <div class="card">
                 <img src="capybara.png" alt="Capivara para adoção">
                 <h3>Capivara - Pastel</h3>
-                <p>Idade: Desconhecido</p>
-                <p>Raça: Capivara</p>
+                <p>Grande / Capivara / Desconhecido / Fêmea</p>
+                <p>Achamos na rua e decidimos colocar para adoção.</p>
                 <button onclick="adotar()">Quero Adotar</button>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <script>
             function adotar() {
                 document.getElementById("form").innerHTML = `
-            <div id="form">
+            <div id="formB" class="form-container">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
 
@@ -59,7 +59,11 @@
                     <input type="tel" id="telefone" name="telefone" required>
 
                     <label for="nome-animal"> Nome do Animal desejado:</label>
-                    <input type="text" id="nome-animal" name="nome-animal" required>
+                    <select>
+                        <option label="Tom" value="tom">Tom</option>
+                        <option label="Rex" value="rex">Rex</option>
+                        <option label="Pastel" value="pastel">Pastel</option>
+                    </select>
 
                     <label for="motivo">Motivo da adoção:</label>
                     <textarea id="motivo" name="motivo" rows="4" required></textarea>

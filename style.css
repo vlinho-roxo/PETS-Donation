@@ -1,13 +1,13 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #c8c4c4;
+    background-image:url(bg.jpg);
 }
 
 #container {
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(255, 217, 181, 0.9);
     padding: 10px 0px;
 }
 
@@ -47,7 +47,7 @@ h1{
 .card {
     width: 200px;
     text-align: center;
-    background-color: #c9c9c9;
+    background-color: rgba(255, 194, 62, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin-top: 30px;
@@ -55,14 +55,13 @@ h1{
 
 .card > button {
     color: white;
-    background-color: blue;
-    border: 1px blue solid ;
+    background-color: orange;
+    border: 1px orange solid ;
 }
 
 .card {
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid #e0e0e0;
 }
 
 .card:hover {
@@ -99,64 +98,78 @@ h1{
 }
 
 .card > button:hover {
-    background-color: #00aaff;
-    border-color: #00aaff;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.card > button:active {
+    background-color: rgb(172, 47, 1);
+    border-color: rgb(172, 47, 1);
 }
 
 #form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#formB {
+    width: 80%;
     max-width: 500px;
-    margin: 40px auto;
-    padding: auto;
-    background: #f6f6f6;
+    margin: 20px 0;
+    padding: 25px;
+    background: rgba(255, 194, 62, 0.5);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-#form label {
+#formB label {
     font-weight: bold;
     color: #333;
-    margin-bottom: 4px;
+    margin-top: 8px;
 }
 
-#form input,
-#form select,
-#form textarea {
-    padding: 8px 10px;
+#formB input,
+#formB select,
+#formB textarea {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     background: #fff;
-    margin-bottom: 10px;
     transition: border-color 0.2s;
-    width: 350px;
-    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#form input:focus,
-#form select:focus,
-#form textarea:focus {
-    border-color: #00aaff;
-    outline: none;
+#formB textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-#form button[type="submit"] {
-    background: #00aaff;
-    color: #fff;
+#formB button[type="submit"] {
+    background: orange;
+    color: white;
     border: none;
     border-radius: 6px;
-    padding: 10px 0;
+    padding: 12px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
-
+    margin-top: 15px;
+    width: 100%;
 }
 
-#form button[type="submit"]:hover {
-    background: #0077cc;
+#formB button[type="submit"]:hover {
+    background: orangered;
 }
 
-#form button[type="submit"]:active {
-    background: #0064ac;
+#formB button[type="submit"]:active {
+    background: rgb(172, 47, 1);
 }
+
+/* CSS is screwed up */
