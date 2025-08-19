@@ -7,7 +7,6 @@
     <title>Doação de Animais Domésticos</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="ctc.ico" type="image/x-icon">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,31 +21,11 @@
         </header>
         <h1>Doação de Animais Domésticos</h1>
         <div id="dados">
-            <div class="card">
-                <img src="cat.png" alt="Gato para adoção">
-                <h3>Gato - Tom</h3>
-                <p>Pequeno / Laranja / 11 meses / Macho</p>
-                <p>Dócil e curioso, porém pode ser um pouco medroso.</p>
-                <button onclick="adotar()">Quero Adotar</button>
-            </div>
-            <div class="card">
-                <img src="dog.png" alt="Cachorro para adoção">
-                <h3>Cão - Rex</h3>
-                <p>Médio / Vira-lata / 5 anos / Macho</p>
-                <p>Brincalhão e amigável, ele pode ser um ótimo parceiro para aventuras.</p>
-                <button onclick="adotar()">Quero Adotar</button>
-            </div>
-            <div class="card">
-                <img src="capybara.png" alt="Capivara para adoção">
-                <h3>Capivara - Pastel</h3>
-                <p>Grande / Capivara / Desconhecido / Fêmea</p>
-                <p>Achamos na rua e decidimos colocar para adoção.</p>
-                <button onclick="adotar()">Quero Adotar</button>
-            </div>
+            <script src="script.js"></script>
         </div>
         <div id="form"></div>
         <script>
-            function adotar() {
+            function adotar(nome1, nome2, nome3) {
                 document.getElementById("form").innerHTML = `
             <div id="formB" class="form-container">
                     <label for="nome">Nome:</label>
@@ -60,9 +39,9 @@
 
                     <label for="nome-animal"> Nome do Animal desejado:</label>
                     <select>
-                        <option label="Tom" value="tom">Tom</option>
-                        <option label="Rex" value="rex">Rex</option>
-                        <option label="Pastel" value="pastel">Pastel</option>
+                        <option label="${nome1}" value="${nome1.toLowerCase()}">${nome1}</option>
+                        <option label="${nome2}" value="${nome2.toLowerCase()}">${nome2}</option>
+                        <option label="${nome3}" value="${nome3.toLowerCase()}">${nome3}</option>
                     </select>
 
                     <label for="motivo">Motivo da adoção:</label>
